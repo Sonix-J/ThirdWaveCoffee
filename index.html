@@ -11,10 +11,8 @@
   </head>
   <body class="bg-[#1B1107] text-white">
     <header>
-      <nav
-        class="flex justify-between items-center px-6 py-6 max-w-6xl mx-auto"
-      >
-        <div class="text-5xl font-bold">
+      <nav class="flex justify-between items-center px-6 py-6 mx-auto">
+        <div class="text-3xl font-bold">
           <span class="text-[#97723E]">THIRD</span>WAVE
         </div>
         <!-- <div class="">
@@ -31,60 +29,84 @@
       </nav>
       <main>
         <!-- Hero Section  -->
-        <section class="flex flex-col mt-10 h-screen items-center px-10">
+        <section
+          class="flex flex-col h-screen items-center justify-center px-10 lg:px-20 xl:px-32 relative"
+        >
           <img
             src="images/coffee.png"
             alt="Coffee Splash Art"
-            class="object-contain w-100 h-100"
+            class="object-contain w-full max-w-sm md:max-w-md h-auto lg:absolute lg:right-10 lg:top-1/2 lg:-translate-y-1/2 lg:max-w-2xl"
           />
-          <div class="flex flex-col gap-5 items-center">
-            <p class="text-7xl font-bold text-center">
+          <div
+            class="flex flex-col gap-5 items-center lg:items-start lg:gap-8 lg:ml-0 lg:mr-auto z-10"
+          >
+            <p
+              class="text-5xl font-bold text-center md:text-7xl lg:text-left xl:text-8xl leading-tight whitespace-normal"
+            >
               Where Coffee <br />Meets Comfort
             </p>
-            <p class="text-center opacity-75 text-2xl">
+            <p class="text-center opacity-75 lg:text-left lg:text-xl max-w-lg">
               Specialty brews, clean flavors, and a calm space designed for your
               everyday escape.
             </p>
-          </div>
-          <div class="flex flex-row gap-10 mt-10">
-            <button class="border border-white px-15 py-5 font-bold">
-              About Us
-            </button>
-            <button class="bg-white text-black px-15 py-5 font-bold">
-              Menu
-            </button>
+            <div class="flex flex-row gap-5 md:gap-6 mt-5 lg:mt-0">
+              <button
+                class="border border-white px-8 py-4 font-bold whitespace-nowrap hover:bg-white hover:text-black transition-colors"
+              >
+                About Us
+              </button>
+              <button
+                class="bg-white text-black px-8 py-4 font-bold hover:bg-opacity-90 transition-colors"
+              >
+                Menu
+              </button>
+            </div>
           </div>
         </section>
         <!-- About Us  -->
-        <section class="bg-[#634832] h-screen px-10 py-30">
-          <p class="font-bold text-7xl">ABOUT US</p>
-          <div class="flex flex-col items-center mt-10 gap-10">
-            <div class="border border-white p-2 rounded">
-              <p class="text-2xl">
-                At our café, we believe great coffee brings people together. We
-                serve carefully brewed drinks made from quality beans, paired
-                with fresh pastries baked daily. Whether you’re meeting friends,
-                working on your laptop, or simply enjoying a quiet moment, our
-                space is designed to make you feel right at home.
+        <section
+          class="bg-[#634832] px-10 py-20 min-h-screen flex flex-col lg:flex-row gap-10 lg:justify-center"
+        >
+          <div class="lg:flex lg:flex-row gap-10 lg:items-center">
+            <div
+              class="flex flex-col gap-5 lg:flex-1 lg:max-w-4xl mb-10 lg:mb-0"
+            >
+              <p
+                class="font-bold text-5xl md:text-7xl whitespace-nowrap xl:text-8xl"
+              >
+                ABOUT US
               </p>
+              <div class="border border-white p-2 rounded">
+                <p class="md:text-2xl">
+                  At our café, we believe great coffee brings people together.
+                  We serve carefully brewed drinks made from quality beans,
+                  paired with fresh pastries baked daily. Whether you're meeting
+                  friends, working on your laptop, or simply enjoying a quiet
+                  moment, our space is designed to make you feel right at home.
+                </p>
+              </div>
             </div>
-            <img
-              src="images/about-img.png"
-              alt="Image"
-              class="object-cover rounded-2xl w-full h-120"
-            />
+            <div class="flex items-center lg:flex-1 lg:max-w-2xl">
+              <img
+                src="images/about-img.png"
+                alt="Image"
+                class="object-cover rounded-2xl w-full h-64 md:h-96 lg:h-auto lg:max-h-125"
+              />
+            </div>
           </div>
         </section>
         <!-- Menu  -->
         <section class="flex flex-col mt-10 h-screen px-10 py-30 gap-15">
-          <div class="flex flex-col items-center gap-10">
-            <p class="font-bold text-7xl items-center">OUR MENU</p>
-            <p class="text-2xl opacity-75 text-center">
+          <div class="flex flex-col items-center gap-5">
+            <p class="font-bold text-5xl text-center md:text-7xl xl:text-8xl">
+              OUR MENU
+            </p>
+            <p class="opacity-75 text-center lg:text-xl">
               Discover our carefully crafted drinks and freshly baked treats.
             </p>
           </div>
-          <div class="w-full overflow-y-auto">
-            <ul class="flex flex-row text-2xl gap-10 min-w-max justify-center">
+          <div class="w-full overflow-x-auto flex">
+            <ul class="flex flex-row gap-6 md:gap-10 pb-2 md:text-2xl">
               <li class="text-[#97723E] whitespace-nowrap">COFFEE</li>
               <li class="whitespace-nowrap">COLDBREW</li>
               <li class="whitespace-nowrap">MANUAL BREWING</li>
@@ -94,8 +116,8 @@
               <li class="whitespace-nowrap">PETITE MEALS</li>
             </ul>
           </div>
-          <div class="flex justify-center">
-            <div class="flex max-w-4xl w-full">
+          <div class="flex justify-center md:text-2xl">
+            <div class="flex w-full max-w-4xl mx-auto">
               <div class="flex-2 flex-col">
                 <p class="text-[#97723E]">MENU</p>
                 <div class="mt-5">
@@ -131,6 +153,52 @@
                     <li class="invisible">111</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Location  -->
+        <section
+          class="bg-[#634832] flex flex-col items-center min-h-screen px-10 py-30 gap-15"
+        >
+          <div class="flex flex-col gap-5">
+            <p class="font-bold text-5xl text-center md:text-7xl xl:text-8xl">
+              WHERE TO FIND US?
+            </p>
+            <p class="opacity-75 text-center lg:text-xl">
+              2nd floor inside Bloq Residences Showroom — GND Arcade, F. Cabahug
+              Street, Kasambagan, Cebu City, Philippines, 6000
+            </p>
+          </div>
+          <div class="flex flex-col gap-5">
+            <p class="font-bold text-3xl text-center md:text-5xl xl:text-6xl">OPEN HOURS</p>
+            <p class="opacity-75 text-center lg:text-xl">
+              Sun-Thu 10AM-10PM, Fri-Sat 10AM-12MN
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.195183289802!2d123.91989319999998!3d10.3262593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999a5e2d34fb3%3A0xa0a583df3ddda4c0!2sThird%20Wave%20Coffee%20Cebu%20-%20Bloq%20Cafe!5e0!3m2!1sen!2sph!4v1771074935953!5m2!1sen!2sph"
+            class="w-full max-w-4xl h-96 rounded-lg"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section class="bg-[#1B1107] px-10 py-10">
+          <div class="flex flex-row gap-20">
+            <div class="flex flex-col gap-5">
+              <p class="text-2xl">SOCIAL LINKS</p>
+              <div class="flex flex-row gap-3 items-center justify-center">
+                <a href="#"><i class="fa-brands fa-facebook text-3xl"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram text-3xl"></i></a>
+                <a href="#"><i class="fa-brands fa-threads text-3xl"></i></a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <p class="text-2xl">GET IN TOUCH</p>
+              <div class="flex flex-row gap-3 items-center justify-center">
+                <a href="#"><i class="fa-solid fa-envelope text-3xl"></i></a>
               </div>
             </div>
           </div>
