@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="icon" type="image/png" href="images/tab-img.png" />
     <script
       src="https://kit.fontawesome.com/a40516ba7e.js"
       crossorigin="anonymous"
@@ -55,7 +56,8 @@
       }
 
       @keyframes float {
-        0%, 100% {
+        0%,
+        100% {
           transform: translateY(0px);
         }
         50% {
@@ -97,11 +99,21 @@
       }
 
       /* Stagger animations */
-      .stagger-1 { animation-delay: 0.1s; }
-      .stagger-2 { animation-delay: 0.2s; }
-      .stagger-3 { animation-delay: 0.3s; }
-      .stagger-4 { animation-delay: 0.4s; }
-      .stagger-5 { animation-delay: 0.5s; }
+      .stagger-1 {
+        animation-delay: 0.1s;
+      }
+      .stagger-2 {
+        animation-delay: 0.2s;
+      }
+      .stagger-3 {
+        animation-delay: 0.3s;
+      }
+      .stagger-4 {
+        animation-delay: 0.4s;
+      }
+      .stagger-5 {
+        animation-delay: 0.5s;
+      }
 
       /* Initial state for animated elements */
       .fade-in-up,
@@ -119,26 +131,26 @@
       <nav
         class="flex justify-between items-center px-6 py-6 max-w-7xl mx-auto relative"
       >
-        <div class="text-3xl font-bold z-50 fade-in-right">
+        <div class="text-3xl font-bold z-50">
           <span class="text-[#97723E]">THIRD</span>WAVE
         </div>
         <ul class="hidden lg:flex flex-row gap-10 text-lg">
-          <li class="fade-in-up stagger-1">
+          <li>
             <a href="#hero" class="hover:text-[#97723E] transition-colors"
               >Home</a
             >
           </li>
-          <li class="fade-in-up stagger-2">
+          <li>
             <a href="#about" class="hover:text-[#97723E] transition-colors"
               >About</a
             >
           </li>
-          <li class="fade-in-up stagger-3">
+          <li>
             <a href="#menu" class="hover:text-[#97723E] transition-colors"
               >Menu</a
             >
           </li>
-          <li class="fade-in-up stagger-4">
+          <li>
             <a href="#location" class="hover:text-[#97723E] transition-colors"
               >Location</a
             >
@@ -147,7 +159,7 @@
         <button
           id="mobile-menu-button"
           aria-label="Toggle menu"
-          class="lg:hidden z-50 relative w-10 h-10 focus:outline-none fade-in-left"
+          class="lg:hidden z-50 relative w-10 h-10 focus:outline-none"
         >
           <div
             class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out"
@@ -172,28 +184,28 @@
       >
         <ul class="flex flex-col items-end px-10 py-8 gap-6 text-xl">
           <li>
-            
+            <a
               href="#hero"
               class="mobile-menu-link hover:text-[#97723E] transition-colors"
               >Home</a
             >
           </li>
           <li>
-            
+            <a
               href="#about"
               class="mobile-menu-link hover:text-[#97723E] transition-colors"
               >About</a
             >
           </li>
           <li>
-            
+            <a
               href="#menu"
               class="mobile-menu-link hover:text-[#97723E] transition-colors"
               >Menu</a
             >
           </li>
           <li>
-            
+            <a
               href="#location"
               class="mobile-menu-link hover:text-[#97723E] transition-colors"
               >Location</a
@@ -207,7 +219,7 @@
       <!-- Hero Section  -->
       <section
         id="hero"
-        class="flex flex-col h-screen items-center justify-center px-10 lg:px-20 xl:px-32 relative"
+        class="flex flex-col h-screen items-center justify-center px-10 lg:px-20 xl:px-32 relative pb-32"
       >
         <img
           src="images/coffee.png"
@@ -222,11 +234,15 @@
           >
             Where Coffee <br />Meets Comfort
           </h1>
-          <p class="text-center opacity-75 lg:text-left lg:text-xl max-w-lg fade-in-right stagger-3">
+          <p
+            class="text-center opacity-75 lg:text-left lg:text-xl max-w-lg fade-in-right stagger-3"
+          >
             Specialty brews, clean flavors, and a calm space designed for your
             everyday escape.
           </p>
-          <div class="flex flex-row gap-5 md:gap-6 mt-5 lg:mt-0 fade-in-up stagger-4">
+          <div
+            class="flex flex-row gap-5 md:gap-6 mt-5 lg:mt-0 fade-in-up stagger-4"
+          >
             <a href="#about"
               ><button
                 class="border border-white px-8 py-4 font-bold whitespace-nowrap hover:bg-white hover:text-black hover:scale-105 transition-all cursor-pointer"
@@ -253,7 +269,9 @@
         >
           <div class="flex flex-col gap-5 lg:flex-1 scroll-reveal">
             <h2 class="font-bold text-5xl md:text-7xl xl:text-8xl">ABOUT US</h2>
-            <div class="border border-white p-6 rounded hover:border-[#97723E] transition-colors">
+            <div
+              class="border border-white p-6 rounded"
+            >
               <p class="md:text-xl">
                 At our café, we believe great coffee brings people together. We
                 serve carefully brewed drinks made from quality beans, paired
@@ -288,13 +306,41 @@
           <ul
             class="flex flex-row gap-6 md:gap-10 pb-2 md:text-xl justify-start lg:justify-center"
           >
-            <li class="text-[#97723E] whitespace-nowrap hover:scale-110 transition-transform cursor-pointer">COFFEE</li>
-            <li class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer">COLDBREW</li>
-            <li class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer">MANUAL BREWING</li>
-            <li class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer">NON-COFFEE</li>
-            <li class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer">ADULT HYDRATION</li>
-            <li class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer">BAKED SNACKS</li>
-            <li class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer">PETITE MEALS</li>
+            <li
+              class="text-[#97723E] whitespace-nowrap hover:scale-110 transition-transform cursor-pointer"
+            >
+              COFFEE
+            </li>
+            <li
+              class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer"
+            >
+              COLDBREW
+            </li>
+            <li
+              class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer"
+            >
+              MANUAL BREWING
+            </li>
+            <li
+              class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer"
+            >
+              NON-COFFEE
+            </li>
+            <li
+              class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer"
+            >
+              ADULT HYDRATION
+            </li>
+            <li
+              class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer"
+            >
+              BAKED SNACKS
+            </li>
+            <li
+              class="whitespace-nowrap hover:text-[#97723E] hover:scale-110 transition-all cursor-pointer"
+            >
+              PETITE MEALS
+            </li>
           </ul>
         </div>
 
@@ -303,11 +349,31 @@
             <div>
               <p class="text-[#97723E] font-bold mb-6">MENU</p>
               <ul class="space-y-4">
-                <li class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer">AFFOGATO</li>
-                <li class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer">AMERICANO</li>
-                <li class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer">AMERICANO FLOAT</li>
-                <li class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer">PICCOLO</li>
-                <li class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer">CORTADO</li>
+                <li
+                  class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer"
+                >
+                  AFFOGATO
+                </li>
+                <li
+                  class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer"
+                >
+                  AMERICANO
+                </li>
+                <li
+                  class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer"
+                >
+                  AMERICANO FLOAT
+                </li>
+                <li
+                  class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer"
+                >
+                  PICCOLO
+                </li>
+                <li
+                  class="hover:text-[#97723E] hover:translate-x-2 transition-all cursor-pointer"
+                >
+                  CORTADO
+                </li>
               </ul>
             </div>
             <div>
@@ -476,19 +542,19 @@
       // Scroll reveal animation
       const observerOptions = {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: "0px 0px -50px 0px",
       };
 
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('active');
+            entry.target.classList.add("active");
           }
         });
       }, observerOptions);
 
       // Observe all scroll-reveal elements
-      document.querySelectorAll('.scroll-reveal').forEach(el => {
+      document.querySelectorAll(".scroll-reveal").forEach((el) => {
         observer.observe(el);
       });
     </script>
